@@ -13,9 +13,9 @@ Define the control points:
 
 ```javascript
 var start = new Point(0, 0),
-		end   = new Point(1, 1),
-		cont1 = new Point(0.5, 0),
-		cont2 = new Point(0.5, 1);
+    end   = new Point(1, 1),
+    cont1 = new Point(0.5, 0),
+    cont2 = new Point(0.5, 1);
 ```
 
 Define the curve:
