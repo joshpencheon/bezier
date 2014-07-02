@@ -9,6 +9,7 @@ class Point
   size: -> @components.length
   coords: -> @components.join(',')
   subtract: (point) -> @plus point.times(-1)
+  magnitude: -> (Math.pow(p, 2) for p in @components).reduce((x,y) -> x + y)
 
 class BezierCurve
   constructor: (@points...) ->
