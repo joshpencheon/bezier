@@ -7,6 +7,8 @@ Curves are defined parametrically. `BezierPath` enables a curve to be exported a
 Usage
 =====
 
+### Two Dimensions ###
+
 To generate a simple 2D bezier curve with two control points (with JavaScript):
 
 Define the control points:
@@ -51,6 +53,8 @@ Generate a 'debug' path between the control points:
 path.control(); // => M0,0 L...
 ```
 
+### Three Dimensions ###
+
 Now a 3D example of a bezier curve, this time with three control points (with CoffeeScript):
 
 ```coffee
@@ -74,3 +78,11 @@ Results in the following (green path is the control curve):
 ![3D bezier](/images/3d_bezier.png "A 3D bezier curve")
 
 (Drawn with [SVG3d](https://code.google.com/p/svg3d/))
+
+### Higher Dimensions ###
+
+Just supply more data values:
+
+```coffee
+origin = new Point 0, 0, 0, 0
+```
